@@ -1,0 +1,78 @@
+
+<div class="app1-main" fxLayout="row wrap" fxLayoutAlign="center">
+  <h1 fxFlex="100" fxLayoutAlign="center">FRONT-END MICROSERVICES</h1>
+  <ul>
+    <li>Extends micro services concepts</li>
+    <li>We usually have monolithic browser applications on top of micro services</li>
+    <li>As app grows up, it gets more difficult to maintain</li>
+    <li>Key point is: composition features owned by independent teams</li>
+    <li>
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How does it look like?
+          </mat-panel-title>
+          <mat-panel-description fxLayoutAlign='end'>
+            Monolithic Frontends
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <img [src]="'images/mono-front.png' | assetUrl" />
+      </mat-expansion-panel>
+    </mat-accordion>
+  </li>
+  <li>
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How we want it!
+          </mat-panel-title>
+          <mat-panel-description fxLayoutAlign='end'>
+            No way... =X
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <img fxFlex='60' [src]="'images/verticals-headline.png' | assetUrl" />
+      </mat-expansion-panel>
+    </mat-accordion>
+  </li>
+  </ul>
+
+  <h2 fxFlex="100" fxLayoutAlign="center">Glory Road</h2>
+
+  <mat-horizontal-stepper #connectionProblemFiberStepper fxFlex='80'>
+    <mat-step>
+      <ng-template matStepLabel>
+        WEB COMPONENTS
+      </ng-template>
+      The most popular front-end frameworks (Vue, React, Angular) give us the ability to write apps/components and so turn them to web-components.
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        ROUTE / REVERSE PROXY
+      </ng-template>
+      Each app/code would be splitted within a conteiner and available through a route. And so, by using a reverse proxy, join all modules into a final url.
+      <br />
+      It scares me....how much complexity would it be?
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        META-FRAMEWORK
+      </ng-template>
+      Each module contains independent builds which generates Javascript/bundles and so they are imported and added in a common
+      page
+      <br />
+      Sounds familiar...
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>
+        IFRAMES
+      </ng-template>
+      Different hosted modules would be part of the same application by using iFrames...
+      <br />
+      Let's just get rid of it...
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
